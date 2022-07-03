@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área y perímetro de figuras planas/title>
+</head>
+<body>
+    
+    <script>
+        alert(
+            "Dígite 1: " + " Area y Perimetro de Triangulo."  +
+            "                           Dígite 2: " + " Area y Perimetro de Rectangulo." + 
+            "                           Dígite 3: " + " Area y Perimetro de Cuadrado." + 
+            "                           Dígite 4: " + " Area y Perimetro del Circulo.");
+
+    </script>
+    
+    
+    <script>
+   var base, altura, area; 
+   const pi = 3.141592
+
+   switch (prompt("Selecciona una Opción: ")) {
+        
+        case "1":
+                            base = parseInt(prompt('ingrese la base del Triangulo'));
+                            altura = parseInt(prompt('ingrese la altura del Triangulo'));
+                            area = base * altura;
+                            document.write('El area del Triangulo es:' + area);           
+    
+                            lado1 = parseInt(prompt('ingrese lado a'));
+                            lado2 = parseInt(prompt('ingrese lado b'));
+                            lado3 = parseInt(prompt('ingrese lado c'));  
+                            perimetro = lado1 + lado2 + lado3;
+                            document.write("<br>",' Y El perimetro del Triangulo es:'+ perimetro);
+            break;
+        
+            case "2":
+ 
+                            base = parseInt(prompt('ingrese la base del rectangulo'));
+                            altura = parseInt(prompt('ingrese la altura del rectangulo'));
+                            perimetro = (2*(base+altura))
+                            area = base*altura
+                            document.write('El perímetro del rectangulo es: ' + perimetro + "<br>");
+                            document.write('El Área del rectangulo es: ' + area);           
+    
+           break;
+
+        case "3":
+
+                            altura = parseInt(prompt('ingrese la altura del Cuadrado'));
+                            perimetro = (4 * altura)
+                            area = Math.pow(altura,2)
+                            document.write('El perímetro del Cuadrado es: ' + perimetro + "<br>");
+                            document.write('El Área del Cuadrado es: ' + area);
+        break;
+        
+        case "4":
+                            radio = parseInt(prompt('ingrese la circunferencia del Circulo'));
+                            perimetro = (2 * pi * Math.pow(radio,2))
+                            area = (pi * Math.pow(radio,2))
+                            document.write('El perímetro del circulo es: ' + perimetro + "<br>");
+                            document.write('El Área del Circulo es: ' + area);
+        break;
+        
+        default:
+        document.write("Tipo de dato no está en rango, por favor dígite una opción de la lista!");
+        break;
+        }
+    </script>
+</body>
+</html>
