@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Busqueda por posición de Vector 1 </title>
+</head>
+<body>
+    <script>
+
+ /* Una emisora con presencia en diferentes ciudades desea conocer el rating de canciones y cantantes más
+    escuchados (sonados) en este semestre del año. Por lo tanto, se ha pedido a estudiantes del SENA del
+    programa de tecnólogo en análisis y desarrollo de software desarrollar una solución que permita conocer
+    la respuesta de 6 personas con relación a sus gustos musicales. Con fines administrativos y realizar una
+    rifa entre las personas encuestadas, la emisora desea poder registrar de las personas entrevistadas su
+    nombre, número de identificación (cédula), fecha de nacimiento, correo electrónico, ciudad de residencia,
+    ciudad de origen. Además, se deberá poder almacenar el artista y título de hasta 3 canciones favoritas en
+    cada una de las personas que se ingrese */
+
+        var data=[];
+
+        numerousuariosinicial = 0;
+        numerousuariosfinal = parseInt(prompt('¿Cuantos Usuarios Almacenará el vector? (Digite un número entre 1 y 6)'));
+
+        if(numerousuariosfinal === 1){
+
+        data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+        "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+        "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+        "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+            document.write("Nombre: " + data[0]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[0]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[0]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[0]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[0]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[0]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[0]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[0]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[0]["canc3"] + "<br>" );
+        
+        }
+
+        else if(numerousuariosfinal === 2){
+
+        data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+        "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+        "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+        "canc3":String(prompt("Nombre de 3ra° Canción")) });
+        
+        data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+        "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+        "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+        "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+        alert ("Seleccione a alguien para mostrar su información por medio de su posición en el vector, (Digite un número del 1 al 2).");
+     switch (prompt("Selecciona una Opción: ")) {
+        
+        case "1":
+            document.write("Nombre: " + data[0]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[0]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[0]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[0]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[0]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[0]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[0]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[0]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[0]["canc3"] + "<br>" );
+            break;
+        
+            case "2":
+ 
+            document.write("Nombre: " + data[1]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[1]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[1]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[1]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[1]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[1]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[1]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[1]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[1]["canc3"] + "<br>");          
+    
+           break;
+        }
+    }
+            
+        else if(numerousuariosfinal === 3){
+
+        data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+        "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+        "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+        "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+        data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+        "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+        "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+        "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+        data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+        "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+        "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+        "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+     alert ("Seleccione a alguien para mostrar su información por medio de su posición en el vector, (Digite un número del 1 al 3).");
+     switch (prompt("Selecciona una Opción: ")) {
+        
+
+        case "1":
+            document.write("Nombre: " + data[0]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[0]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[0]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[0]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[0]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[0]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[0]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[0]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[0]["canc3"] + "<br>" );
+            break;
+        
+            case "2":
+ 
+            document.write("Nombre: " + data[1]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[1]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[1]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[1]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[1]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[1]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[1]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[1]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[1]["canc3"] + "<br>");          
+    
+           break;
+
+           case "3":
+ 
+            document.write("Nombre: " + data[2]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[2]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[2]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[2]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[2]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[2]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[2]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[2]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[2]["canc3"] + "<br>");          
+
+            break;
+        }
+
+    }
+
+    else if(numerousuariosfinal === 4){
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    alert ("Seleccione a alguien para mostrar su información por medio de su posición en el vector, (Digite un número del 1 al 4).");
+    switch (prompt("Selecciona una Opción: ")) {
+        
+
+        case "1":
+            document.write("Nombre: " + data[0]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[0]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[0]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[0]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[0]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[0]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[0]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[0]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[0]["canc3"] + "<br>" );
+            break;
+        
+            case "2":
+ 
+            document.write("Nombre: " + data[1]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[1]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[1]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[1]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[1]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[1]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[1]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[1]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[1]["canc3"] + "<br>");          
+    
+            break;
+
+           case "3":
+ 
+            document.write("Nombre: " + data[2]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[2]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[2]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[2]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[2]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[2]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[2]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[2]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[2]["canc3"] + "<br>");          
+
+            break;
+
+            case "4":
+ 
+            document.write("Nombre: " + data[3]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[3]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[3]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[3]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[3]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[3]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[3]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[3]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[3]["canc3"] + "<br>");          
+
+            break;
+        }
+    
+    }
+
+    else if(numerousuariosfinal === 5){
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    alert ("Seleccione a alguien para mostrar su información por medio de su posición en el vector, (Digite un número del 1 al 5).");
+     switch (prompt("Selecciona una Opción: ")) {
+        
+
+        case "1":
+            document.write("Nombre: " + data[0]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[0]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[0]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[0]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[0]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[0]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[0]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[0]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[0]["canc3"] + "<br>" );
+            break;
+        
+            case "2":
+ 
+            document.write("Nombre: " + data[1]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[1]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[1]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[1]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[1]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[1]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[1]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[1]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[1]["canc3"] + "<br>");          
+    
+           break;
+
+           case "3":
+ 
+            document.write("Nombre: " + data[2]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[2]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[2]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[2]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[2]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[2]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[2]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[2]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[2]["canc3"] + "<br>");          
+
+            break;
+
+            case "4":
+ 
+            document.write("Nombre: " + data[3]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[3]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[3]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[3]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[3]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[3]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[3]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[3]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[3]["canc3"] + "<br>");          
+
+            break;
+
+            case "5":
+ 
+            document.write("Nombre: " + data[4]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[4]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[4]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[4]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[4]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[4]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[4]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[4]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[4]["canc3"] + "<br>");          
+
+            break;
+        }
+
+}
+
+else if(numerousuariosfinal === 6){
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    data.push({"nombre":String(prompt("Nombre")),"ID": parseInt(prompt('Num ID: ')), "Correo":String(prompt("Correo")),
+    "Ciudadr":String(prompt("Ciudad de Residencia")), "Ciudadori":String(prompt("Ciudad de Origen")), 
+    "artistafav":String(prompt("Artista Favorito: ")), "canc1":String(prompt("Nombre de 1ra° Canción")), "canc2":String(prompt("Nombre de 2da° Canción")),
+    "canc3":String(prompt("Nombre de 3ra° Canción")) });
+
+    alert ("Seleccione a alguien para mostrar su información por medio de su posición en el vector, (Digite un número del 1 al 6).");
+     switch (prompt("Selecciona una Opción: ")) {
+        
+
+        case "1":
+            document.write("Nombre: " + data[0]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[0]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[0]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[0]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[0]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[0]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[0]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[0]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[0]["canc3"] + "<br>" );
+            break;
+        
+            case "2":
+ 
+            document.write("Nombre: " + data[1]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[1]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[1]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[1]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[1]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[1]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[1]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[1]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[1]["canc3"] + "<br>");          
+    
+           break;
+
+           case "3":
+ 
+            document.write("Nombre: " + data[2]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[2]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[2]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[2]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[2]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[2]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[2]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[2]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[2]["canc3"] + "<br>");          
+
+            break;
+
+            case "4":
+ 
+            document.write("Nombre: " + data[3]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[3]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[3]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[3]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[3]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[3]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[3]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[3]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[3]["canc3"] + "<br>");          
+
+            break;
+
+            case "5":
+ 
+            document.write("Nombre: " + data[4]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[4]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[4]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[4]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[4]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[4]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[4]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[4]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[4]["canc3"] + "<br>");          
+
+            break;
+
+            case "6":
+ 
+            document.write("Nombre: " + data[5]["nombre"] + "<br>");
+            document.write("Número de Identificación: " + data[5]["ID"] + "<br>");
+            document.write("Correo Electronico: " + data[5]["Correo"] + "<br>");
+            document.write("Ciudad de Residencia: " + data[5]["Ciudadr"] + "<br>");
+            document.write("Ciudad de Origen: " + data[5]["Ciudadori"] + "<br>");
+            document.write("Cantante Favorito: " + data[5]["artistafav"] + "<br>");
+            document.write("Canción Favorita 1: " + data[5]["canc1"] + "<br>");
+            document.write("Canción Favorita 2: " + data[5]["canc2"] + "<br>");
+            document.write("Canción Favorita 3: " + data[5]["canc3"] + "<br>");          
+
+            break;
+        }
+
+}
+
+    </script>
+
+</body>
+</html>
