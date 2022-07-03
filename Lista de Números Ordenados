@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lista Ordenada </title>
+</head>
+<body>
+    <script>
+
+    /* Escriba un programa que lea dos vectores de números enteros ordenados ascendentemente y luego
+    produzca la lista ordenada de la mezcla de los dos, por ejemplo, si los dos arreglos tienen los números 1
+    3 6 9 17 y 2 4 10 17, respectivamente, la lista de números en la pantalla debe ser 1 2 3 4 6 9 10 17 17.
+    Limite los vectores a un tamaño de 5 y debe validar en cada ingreso que realmente se estén ingresando
+    los datos de forma ascendente. */
+        
+     alert("El siguiente programa le pedirá que ingrese 10 números y este le ordenará la lista en orden ascendente y decreciente");
+
+     listaDeNumeros = [];
+     listaDeNumeros2 = [];
+     
+     listaDeNumeros[0] = parseInt(prompt('N°1: '));
+     listaDeNumeros[1] = parseInt(prompt('N°2: '));
+     listaDeNumeros[2] = parseInt(prompt('N°3: '));
+     listaDeNumeros[3] = parseInt(prompt('N°4: '));
+     listaDeNumeros[4] = parseInt(prompt('N°5: '));
+     
+     listaDeNumeros2[0] = parseInt(prompt('N°6: '));
+     listaDeNumeros2[1] = parseInt(prompt('N°7: '));
+     listaDeNumeros2[2] = parseInt(prompt('N°8: '));
+     listaDeNumeros2[3] = parseInt(prompt('N°9: '));
+     listaDeNumeros2[4] = parseInt(prompt('N°10: '));
+
+     listaDeNumeros= listaDeNumeros.concat(listaDeNumeros2);
+
+     listaDeNumeros.sort((a,b) => {
+            if(a == b) {
+            return 0;
+            }
+            if(a < b){
+            return -1;
+            }
+            return 1;
+    }) 
+
+    document.write("Lista Completa ordenada ascendente: "+ listaDeNumeros +"<br>");
+    document.write("Lista Completa ordenada descendente: "+ listaDeNumeros.reverse());
+
+    </script>   
+</body>
+</html>
