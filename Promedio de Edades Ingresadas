@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de edades ingresadas</title>
+
+</head>
+<body>
+   
+   <script>
+
+   /* Desarrollar un programa que permita almacenar las edades de un grupo de 10 personas en un vector de
+   enteros y luego determine la cantidad de personas que son menores de edad, mayores de edad, cuántos
+   adultos mayores, la edad más baja, la edad más alta y el promedio de edades ingresadas. Para el ejercicio
+   anterior suponga que un adulto mayor debe tener una edad igual o superior a 60. Debe validar para cada
+   ingreso que los valores estén en un rango entre 1 y 120 años. En caso de error deberá notificar y solicitar
+   un nuevo valor. */
+
+    alert("Ingrese 10 números correspondientes a edad: ");
+
+    listaDeNumeros = [];
+    
+     listaDeNumeros[0] = parseInt(prompt('N°1: '));
+     listaDeNumeros[1] = parseInt(prompt('N°2: '));
+     listaDeNumeros[2] = parseInt(prompt('N°3: '));
+     listaDeNumeros[3] = parseInt(prompt('N°4: '));
+     listaDeNumeros[4] = parseInt(prompt('N°5: '));
+     listaDeNumeros[5] = parseInt(prompt('N°6: '));
+     listaDeNumeros[6] = parseInt(prompt('N°7: '));
+     listaDeNumeros[7] = parseInt(prompt('N°8: '));
+     listaDeNumeros[8] = parseInt(prompt('N°9: '));
+     listaDeNumeros[9] = parseInt(prompt('N°10: '));
+
+     menedad = 0;
+     mayedad = 0;
+     adultmay = 0;
+     datoinv = 0;
+
+     //Condicional de lista [0]
+     
+    if (listaDeNumeros[0] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[0] = null;
+    } 
+    
+    else if (listaDeNumeros[0] < 18) {
+    menedad = menedad + 1;
+    } 
+
+    else if (listaDeNumeros[0] >= 18 && listaDeNumeros[0] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[0] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [1]
+
+    if (listaDeNumeros[1] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[1] = null;
+    } 
+    
+    else if (listaDeNumeros[1] < 18) {
+    menedad = menedad + 1;
+    } 
+
+    else if (listaDeNumeros[1] >= 18 && listaDeNumeros[1] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[1] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [2]
+
+    if (listaDeNumeros[2] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[2] = null;
+    } 
+    
+    else if (listaDeNumeros[2] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[2] >= 18 && listaDeNumeros[2] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[2] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [3]
+
+    if (listaDeNumeros[3] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[3] = null;
+    } 
+    
+    else if (listaDeNumeros[3] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[3] >= 18 && listaDeNumeros[3] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[3] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [4]
+
+    if (listaDeNumeros[4] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[4] = null;
+    } 
+    
+    else if (listaDeNumeros[4] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[4] >= 18 && listaDeNumeros[4] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[4] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [5]
+    
+    if (listaDeNumeros[5] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[5] = null;
+    } 
+    
+    else if (listaDeNumeros[5] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[5] >= 18 && listaDeNumeros[5] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[5] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [6]
+
+    if (listaDeNumeros[6] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[6] = null;
+    } 
+    
+    else if (listaDeNumeros[6] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[6] >= 18 && listaDeNumeros[6] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[6] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [7]
+
+    if (listaDeNumeros[7] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[7] = null;
+    } 
+    
+    else if (listaDeNumeros[7] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[7] >= 18 && listaDeNumeros[7] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[7] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [8]
+
+    if (listaDeNumeros[8] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[8] = null;
+    } 
+    
+    else if (listaDeNumeros[8] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[8] >= 18 && listaDeNumeros[8] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[8] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+    //Condicional de lista [9]
+
+    if (listaDeNumeros[9] >= 120) {
+    datoinv = datoinv + 1;
+    listaDeNumeros[9] = null;
+    } 
+    
+    else if (listaDeNumeros[9] < 18) {
+    menedad = menedad + 1;
+    } 
+   
+    else if (listaDeNumeros[9] >= 18 && listaDeNumeros[9] < 60) {
+    mayedad = mayedad + 1;
+    } 
+    
+    else if (listaDeNumeros[9] >= 60) {
+    mayedad = mayedad + 1;
+    adultmay = adultmay + 1;
+    } 
+
+   </script>
+   <br>
+   <script>
+
+    promed = ((listaDeNumeros[0] + listaDeNumeros[1] + listaDeNumeros[2] + listaDeNumeros[3] +
+    listaDeNumeros[4] + listaDeNumeros[5] + listaDeNumeros[6] + listaDeNumeros[7] +
+    listaDeNumeros[8] + listaDeNumeros[9]) / 10)
+   
+    document.write("Hay: "+ mayedad +" Mayor(es) de edad." + "<br>");
+    document.write("Hay: "+ menedad +" Menor(es) de edad." + "<br>");
+    document.write("Hay: "+ adultmay +" Adulto(s) Mayor(es)." + "<br>");
+    document.write("El promedio de edades ingresado es: "+ promed + " Años." + "<br>");
+    document.write("Datos invalidos ingresados en la lista: " + datoinv + "<br>");
+
+
+   </script>
+
+   <script>
+    
+     max = Math.max(listaDeNumeros[0],listaDeNumeros[1],listaDeNumeros[2],
+     listaDeNumeros[3],listaDeNumeros[4],listaDeNumeros[5],listaDeNumeros[6],
+     listaDeNumeros[7],listaDeNumeros[8],listaDeNumeros[9]);
+     
+     mini = Math.min(listaDeNumeros[0],listaDeNumeros[1],listaDeNumeros[2],
+     listaDeNumeros[3],listaDeNumeros[4],listaDeNumeros[5],listaDeNumeros[6],
+     listaDeNumeros[7],listaDeNumeros[8],listaDeNumeros[9]);
+
+    document.write("El número menor ingresado es: " + Math.min(mini) + "<br>");
+    document.write("El número mayor ingresado es: " + Math.max(max) );
+
+   </script>
+</body>
+</html>
